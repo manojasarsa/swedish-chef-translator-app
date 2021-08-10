@@ -5,6 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swedish Chef Speak</title>
+
+    <style>
+        #output{
+            border: 1px solid black;
+            width: 80%;
+            height: 10vh;
+            margin: auto;
+            padding: 1rem;
+            
+        }
+        #btn-translate {
+            background-color: #f098ba ;
+            font-family: 'Satisfy', cursive;
+            display: block; 
+            height: 5vh;
+            margin: auto;
+            margin-top: 1rem;
+            font-weight: large;
+            
+        }
+        #btn-translate:hover{
+            color: #f1d272;
+            background-color: rgb(223, 57, 79);
+        }
+    </style>
     
     <link href="styles.css" rel='stylesheet' />
      
@@ -13,27 +38,29 @@
 <body>
     
     <nav class="navigation">
-        <div class="nav-head">Swedish Chef Speak</div>
+        <div class="nav-brand ">Swedish Chef Talk</div>
     </nav>
-    
-    <header class="hero-img">
-        <img class="pic1" src = "images/pic.jpg" />
+
+    <header class="hero">
+        <img class="hero-img" src="images/pic.jpg" />
     </header>
 
-    <textarea id="input-Text" placeholder = "Type your text below to convert to Chef Speak using our The Swedish chef Speak:"> </textarea>
-    
-    <button id="btn-translate"> Translate </button>
+    <textarea id="txt-Input" placeholder="Enter text in English here and it will translate to Swedish language:"></textarea>
 
-    <div class="op">Output will come here 👇</div>
+    <button id="btn-translate"> Translate</button>
 
-    <div id="output"> </div>
+
+    <div class="div-txt"> Output will come here 👇
+    </div>
+
+    <div id="output"></div> 
+
     
 
     <footer class="footer">
         <div class="footer-header"><strong>About</strong> </div>
-        <p>Convert from English to Swedish chef Speak. The Swedish Chef is a Muppet character that appeared on The Muppet Show. The Swedish Chef does not speak any known language, but his nonsense words are so widley interpreted as Swedish-sounding.</p>
-        
-        <script src="/app.js" type="text/javascript"></script>
+        <p class="para">Convert from English to Swedish chef Speak. The Swedish Chef is a Muppet character that appeared on The Muppet Show. The Swedish Chef does not speak any known language, but his nonsense words are so widley interpreted as Swedish-sounding.</p>
+        <script src="app.js" type="text/javascript"></script>
     </footer>
 
 </body>
